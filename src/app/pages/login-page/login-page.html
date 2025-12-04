@@ -2,13 +2,13 @@
     <div>img</div>
 </section>
 <section class="login-section">
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
         <h3>Entre com sua conta</h3>
         <label>Email</label>
-        <input>
+        <input formControlName="email">
         <label>Senha</label>
-        <input>
-        <button>Login</button>
+        <input formControlName="password">
+        <button type="submit" [disabled]="!loginForm.valid">Login</button>
     </form>
     <p>Não tem cadastro?<a>Clique aqui e cadastre-se</a></p>
 </section>
