@@ -1,0 +1,17 @@
+@import "./../../../styles/variables.scss";
+
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: $secondary-color;
+}
+
+.login-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
