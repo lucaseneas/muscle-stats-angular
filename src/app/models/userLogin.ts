@@ -1,4 +1,4 @@
 export type UserLogin = {
-    email:String,
+    email:string,
     password:String
 }

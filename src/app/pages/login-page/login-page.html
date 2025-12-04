@@ -1,5 +1,5 @@
-<section>
-    <div>img</div>
+<section class="logo-section">
+    <img src="images/mainIcon.png" alt="Muscle Stats Logo">
 </section>
 <section class="login-section">
     <form [formGroup]="loginForm" (ngSubmit)="login()">
@@ -8,7 +8,7 @@
         <input formControlName="email">
         <label>Senha</label>
         <input formControlName="password">
-        <button type="submit" [disabled]="!loginForm.valid">Login</button>
+        <button class="btn-login" type="submit" [disabled]="!loginForm.valid">Login</button>
     </form>
     <p>Não tem cadastro?<a>Clique aqui e cadastre-se</a></p>
 </section>
